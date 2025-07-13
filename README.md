@@ -94,7 +94,14 @@ All RFM features are normalized using `MinMaxScaler`.
 - Cluster assignment with explanations.
 - SHAP value plots for feature importance.
 - Model comparison, radar charts, KDE plots.
-
+<img width="1915" height="822" alt="Screenshot 2025-07-13 015150" src="https://github.com/user-attachments/assets/1b6ff9a2-f3e2-4dc8-b60c-311050934c2d" />
+<img width="1919" height="832" alt="Screenshot 2025-07-13 015205" src="https://github.com/user-attachments/assets/a618e0e5-fd0d-41b8-9543-9a7afcafc4eb" />
+<img width="1588" height="736" alt="Screenshot 2025-07-12 011444" src="https://github.com/user-attachments/assets/f935fda7-dbe6-4005-8339-1b58b30c0bfd" />
+<img width="1604" height="565" alt="Screenshot 2025-07-12 011501" src="https://github.com/user-attachments/assets/6ad35065-5b61-4866-a8bc-731b96aa2ba6" />
+<img width="1584" height="635" alt="Screenshot 2025-07-12 011517" src="https://github.com/user-attachments/assets/45bf8958-be09-483e-b3c7-42093b0fbd3b" />
+<img width="1625" height="742" alt="Screenshot 2025-07-12 011533" src="https://github.com/user-attachments/assets/201fda56-ad19-4fcc-9ab4-5117d2b782eb" />
+<img width="1660" height="872" alt="Screenshot 2025-07-12 011600" src="https://github.com/user-attachments/assets/bfb2200c-2508-4ecf-9fa4-50816c844d14" />
+<img width="1883" height="792" alt="Screenshot 2025-07-13 015255" src="https://github.com/user-attachments/assets/88e1eb94-c307-4ed0-8283-bc5322d9b88e" />
 ---
 ## Deployment Guide
 ### Project Structure
