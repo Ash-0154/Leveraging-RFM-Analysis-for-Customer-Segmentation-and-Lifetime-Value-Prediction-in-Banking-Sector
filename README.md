@@ -95,7 +95,25 @@ All RFM features are normalized using `MinMaxScaler`.
 ---
 ## Deployment Guide
 ### Project Structure
-<pre> customer-analytics-project/ ├── app/ │ ├── api.py # FastAPI backend │ └── dashboard.py # Streamlit UI ├── models/ │ ├── cltv/ # Saved regression models │ └── segmentation/ # Saved clustering models ├── scripts/ │ ├── train_cltv.py │ ├── train_segmentation.py │ └── preprocess.py ├── data/ # Input datasets ├── logs/ # Prediction logs ├── visuals/ # Plots, figures ├── requirements.txt └── README.md </pre>
+```
+customer-analytics-project/
+├── app/
+│   ├── api.py              # FastAPI backend
+│   └── dashboard.py        # Streamlit UI
+├── models/
+│   ├── cltv/               # Saved regression models
+│   └── segmentation/       # Saved clustering models
+├── scripts/
+│   ├── train_cltv.py
+│   ├── train_segmentation.py
+│   └── preprocess.py
+├── data/                   # Input datasets
+├── logs/                   # Prediction logs
+├── visuals/                # Plots, figures
+├── requirements.txt
+└── README.md
+```
+
 
 1. **EC2 Setup**  
    Launched a `t2.micro` instance (Ubuntu 22.04)  
