@@ -1,4 +1,5 @@
-# RFM-Based CLTV Prediction & Customer Segmentation in Banking
+# Leveraging RFM Analysis for Customer Segmentation and Lifetime Value Prediction in the Banking Sector
+
 
 A full-stack machine learning platform that leverages RFM analysis to predict Customer Lifetime Value (CLTV) and segment customers using advanced clustering techniques. Designed for the banking and financial services sector, this project enables data-driven targeting and customer management through interactive dashboards and a secure cloud deployment.
 
