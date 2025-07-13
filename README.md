@@ -102,7 +102,9 @@ All RFM features are normalized using `MinMaxScaler`.
 <img width="1625" height="742" alt="Screenshot 2025-07-12 011533" src="https://github.com/user-attachments/assets/201fda56-ad19-4fcc-9ab4-5117d2b782eb" />
 <img width="1660" height="872" alt="Screenshot 2025-07-12 011600" src="https://github.com/user-attachments/assets/bfb2200c-2508-4ecf-9fa4-50816c844d14" />
 <img width="1883" height="792" alt="Screenshot 2025-07-13 015255" src="https://github.com/user-attachments/assets/88e1eb94-c307-4ed0-8283-bc5322d9b88e" />
+
 ---
+
 ## Deployment Guide
 ### Project Structure
 ```
