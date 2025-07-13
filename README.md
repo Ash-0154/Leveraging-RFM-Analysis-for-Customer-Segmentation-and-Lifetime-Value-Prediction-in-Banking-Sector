@@ -32,6 +32,7 @@ Used for both CLTV prediction and segmentation
 | Security         | Includes Basic Auth, Rate Limiting, S3 backup                              |
 
 ## Architecture
+```
 User Input ─► Streamlit UI
 │
 HTTP Request to /predict
@@ -39,6 +40,7 @@ HTTP Request to /predict
 FastAPI Backend ─► CLTV + Segmentation Models
 ▼
 Prediction Logs (CSV + S3)
+```
 ---
 
 ## Feature Engineering
