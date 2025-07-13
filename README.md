@@ -95,21 +95,7 @@ All RFM features are normalized using `MinMaxScaler`.
 ---
 ## Deployment Guide
 ### Project Structure
-customer-analytics-project/
-├── app/
-│ ├── api.py # FastAPI backend
-│ └── dashboard.py # Streamlit UI
-├── models/
-│ ├── cltv/ # Saved regression models
-│ └── segmentation/ # Saved clustering models
-├── scripts/
-│ ├── train_cltv.py
-│ ├── train_segmentation.py
-│ └── preprocess.py
-├── data/ # Input datasets
-├── logs/ # Prediction logs
-├── visuals/ # Plots, figures
-├── requirements.txt
+<pre> customer-analytics-project/ ├── app/ │ ├── api.py # FastAPI backend │ └── dashboard.py # Streamlit UI ├── models/ │ ├── cltv/ # Saved regression models │ └── segmentation/ # Saved clustering models ├── scripts/ │ ├── train_cltv.py │ ├── train_segmentation.py │ └── preprocess.py ├── data/ # Input datasets ├── logs/ # Prediction logs ├── visuals/ # Plots, figures ├── requirements.txt └── README.md </pre>
 
 1. **EC2 Setup**  
    Launched a `t2.micro` instance (Ubuntu 22.04)  
@@ -137,19 +123,19 @@ customer-analytics-project/
 - Code uses `boto3` to upload `logs/predictions.csv` automatically on each POST request
 
  Security & Cloud Features
--HTTP Basic Authentication added to protect the /predict endpoint using a secure username/password scheme (via FastAPI).
--Rate Limiting implemented using the slowapi library to allow only 10 requests per minute per IP address.
--Logging Predictions: Each prediction request is logged to a local logs/predictions.csv file for audit and traceability.
--S3 Cloud Integration: The logged predictions are automatically uploaded to an AWS S3 bucket (customer-predictions) after every API call.
--Deployed on AWS EC2: The full stack (FastAPI + Streamlit + models) is hosted on a Free Tier EC2 instance with Elastic IP for persistent access.
--Secure SSH Access: Instance protected via private key authentication.
+- HTTP Basic Authentication added to protect the /predict endpoint using a secure username/password scheme (via FastAPI).
+- Rate Limiting implemented using the slowapi library to allow only 10 requests per minute per IP address.
+- Logging Predictions: Each prediction request is logged to a local logs/predictions.csv file for audit and traceability.
+- S3 Cloud Integration: The logged predictions are automatically uploaded to an AWS S3 bucket (customer-predictions) after every API call.
+- Deployed on AWS EC2: The full stack (FastAPI + Streamlit + models) is hosted on a Free Tier EC2 instance with Elastic IP for persistent access.
+- Secure SSH Access: Instance protected via private key authentication.
 
 ---
 
 ## Future Work
--Add time-series CLTV modeling
--Expand to include demographic and transaction-level features
--Add XAI explainability layers with LIME/SHAP dashboards
--Streamlit Cloud or AWS ECS deployment
--Scheduled retraining (cron + Lambda)
+- Add time-series CLTV modeling
+- Expand to include demographic and transaction-level features
+- Add XAI explainability layers with LIME/SHAP dashboards
+- Streamlit Cloud or AWS ECS deployment
+- Scheduled retraining (cron + Lambda)
 
